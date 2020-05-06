@@ -1,0 +1,158 @@
+{
+  "hotspots": [
+    {
+      "area": "Master plan road,Khandari",
+      "id": 1,
+      "coordinates": {
+        "latitude": 27.20742,
+        "longitude": 77.991447
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Hotel Crystal Sarovar",
+      "id": 2,
+      "coordinates": {
+        "latitude": 27.1686907,
+        "longitude": 78.0119045
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Nagala Padi",
+      "id": 3,
+      "coordinates": {
+        "latitude": 27.2108982,
+        "longitude": 78.0033943
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Railway Colony Cantt",
+      "id": 4,
+      "coordinates": {
+        "latitude": 27.1590417,
+        "longitude": 77.9883886
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Kamla Nagar",
+      "id": 5,
+      "coordinates": {
+        "latitude": 27.2221264,
+        "longitude": 78.0095279
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Eminent Apartment",
+      "id": 6,
+      "coordinates": {
+        "latitude": 27.2047767,
+        "longitude": 77.9957796
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Mohanpura Raoli",
+      "id": 7,
+      "coordinates": {
+        "latitude": 27.1758914,
+        "longitude": 78.0055233
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Jeonimandi",
+      "id": 8,
+      "coordinates": {
+        "latitude": 27.1958821,
+        "longitude": 78.0230656
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Fawara MM gate",
+      "id": 9,
+      "coordinates": {
+        "latitude": 27.189575,
+        "longitude": 78.0086168
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Charsu gate",
+      "id": 10,
+      "coordinates": {
+        "latitude": 27.1916602,
+        "longitude": 78.0081785
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Jagdishpura",
+      "id": 11,
+      "coordinates": {
+        "latitude": 27.1939124,
+        "longitude": 77.9776117
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Khandoli Hasanpur",
+      "id": 12,
+      "coordinates": {
+        "latitude": 27.2982354,
+        "longitude": 78.032514
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Magthai Bichpuri",
+      "id": 13,
+      "coordinates": {
+        "latitude": 27.1755874,
+        "longitude": 77.9215688
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    },
+    {
+      "area": "Iradat Nagar",
+      "id": 14,
+      "coordinates": {
+        "latitude": 26.9678327,
+        "longitude": 78.0397016
+      },
+      "type": "green",
+      "color": "rgba(0,255,0,0.5)",
+      "infected": 1
+    }
+  ]
+}
