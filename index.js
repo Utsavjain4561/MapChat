@@ -8,7 +8,7 @@ const express = require("express"),
 
 let DATABASE_URL = "mongodb://localhost/mapchat",
   PORT = 8000;
-// /process.env.NODE_ENV = "development";
+process.env.NODE_ENV = "development";
 
 if (process.env.NODE_ENV === "production") {
   DATABASE_URL = process.env.DATABASE_URL;

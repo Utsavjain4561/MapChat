@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import { Toast, ToastBody } from "reactstrap";
-// import { userIcon, messageIcon } from "./assets/marker";
+
 import userLocation from "./userlocation.svg";
 import messageLocation from "./messagelocation.svg";
 import L from "leaflet";
@@ -27,6 +27,7 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
+      showChatRoom: false,
       location: {
         lat: 22,
         lng: 80,
@@ -38,7 +39,7 @@ export default class App extends Component {
         name: "",
         message: "",
       },
-      sentMessage: false,
+
       showToast: false,
       messages: [],
     };
@@ -75,9 +76,6 @@ export default class App extends Component {
   };
   formSubmit = (event) => {
     event.preventDefault();
-    this.setState({
-      sentMessage: false,
-    });
 
     const { error, response } = this.validateForm();
     if (response) {
@@ -91,7 +89,6 @@ export default class App extends Component {
       sendMessage(message)
         .then(() => {
           this.setState({
-            sentMessage: true,
             showToast: true,
           });
           setTimeout(() => {
@@ -139,7 +136,11 @@ export default class App extends Component {
       });
     });
   }
-
+  handleChatRoom = () => {
+    this.setState((prevState) => ({
+      showChatRoom: !prevState.showChatRoom,
+    }));
+  };
   render() {
     const position = [this.state.location.lat, this.state.location.lng];
     return (
@@ -150,16 +151,21 @@ export default class App extends Component {
           messages={this.state.messages}
           position={position}
           userIcon={userIcon}
+          handleChatRoom={this.handleChatRoom}
+          showChatRoom={this.state.showChatRoom}
           messageIcon={messageIcon}
         />
-        {!this.state.sentMessage ? (
+        {this.state.showChatRoom ? (
           <MessageCard
-            sentMessage={this.state.sentMessage}
             formSubmit={this.formSubmit}
+            handleChatRoom={this.handleChatRoom}
             valueChanged={this.valueChanged}
             userLocation={this.state.userLocation}
           />
-        ) : this.state.showToast ? (
+        ) : (
+          ""
+        )}
+        {this.state.showToast ? (
           <div className="toast-div p-3 my-2 rounded">
             <Toast>
               <ToastBody>Message sent !!</ToastBody>
